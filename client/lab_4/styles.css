@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .title-container{
+    display: flex;
+    background-color: rgba(0,139, 139,0.8);
+    height: 40px;
+    align-items: center;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  }
+  
+  .menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links {
+    border: 1px solid #fff; 
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .links a:link, .links a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main_page {
+    margin-left: 20px;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header a:link, .header a:visited {
+    color: royalblue;
+    text-decoration: none;
+  }
+
+  .group_project,
+  .git_link {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    order: 0;
+  }
+
+  .photo-grid-item.first-item {
+    order: 1;
+  }
+  
+  .photo-grid-item.last-item {
+    order: -1;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative;
+  }
+
+  .carousel .carousel_item,
+  .carousel .carousel_item--hidden {
+      display: none;
+  }
+
+  .carousel .carousel_item img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+  }
+
+  .carousel .carousel_item--visible {
+      display: block;
+  }
+
+  .carousel .carousel_actions {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position:  absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .carousel .carousel_actions button {
+      border: 0;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+  }
+
+  .carousel .carousel_actions button#carousel_button--prev {
+    margin-left: 20px;
+  }
+
+  .carousel .carousel_actions button#carousel_button--next {
+    margin-right: 20px;
+  }
+
+  button {
+    border-color: lightgray;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    font-weight: bold;
+  }
+
+  button:focus {
+    background-color: orange;
+    border-color: blue;
+  }
