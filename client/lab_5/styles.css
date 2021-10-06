@@ -9,10 +9,9 @@ body {
   padding: 0;
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-  background-color: darkslategray;
+  background-color: rgb(12, 3, 73);
 }
 
-/* Page Layout */
 .columns {
   display: flex;
   flex-wrap: wrap;
@@ -24,4 +23,15 @@ body {
 .container {
   max-width: 960px;
   margin-top: 25px;
+}
+
+.box {
+  background-color: white;
+  padding: 2rem;
+  margin: 10px;
+}
+
+.columns {
+  align-items: center;
+  justify-content: center;
 }
